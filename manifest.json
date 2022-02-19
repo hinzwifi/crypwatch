@@ -1,0 +1,17 @@
+{
+  "name": "CryptWatch",
+  "description": "Extension for my crypto loving cousin",
+  "version": "1.0",
+  "manifest_version": 3,
+  "omnibox": {
+    "keyword": "nt"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["alarms", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
