@@ -1,7 +1,7 @@
 {
-  "name": "CryptWatch",
+  "name": "SLP Watch",
   "description": "Extension for my crypto loving cousin",
-  "version": "1.0",
+  "version": "0.1.0",
   "manifest_version": 3,
   "omnibox": {
     "keyword": "nt"
@@ -12,6 +12,6 @@
   },
   "permissions": ["alarms", "storage"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup/popup.html"
   }
 }
