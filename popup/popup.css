@@ -1,11 +1,118 @@
-.openbox {
+body {
   min-height: 200px;
   max-height: 500px;
   min-width: 300px;
   max-width: 600px;
+  background-color: #32373a;
 }
-
-.flex {
+.canvasjs-chart-credit {
+  display: none;
+}
+.buttonsArea {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+#chartContainer {
+  display: none;
+}
+#offline {
+  display: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.offlinemiddle {
   display: flex;
   justify-content: center;
+}
+.offlinealert {
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+  background: red;
+  padding: 3px;
+}
+.flex {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+button {
+  color: white;
+  background-color: #292d3e;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 1px white, 2px 2px white, 3px 3px white;
+  transform: translateX(-3px);
+}
+button:active {
+  transform: scale(0.9);
+  transition-duration: 300ms;
+}
+
+#nowContainer {
+  color: white;
+  margin: 0;
+
+  font-size: 2rem;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  display: inline-grid;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+  border-radius: var(--rounded-box, 1rem);
+}
+:where(.stats) {
+  grid-auto-flow: column;
+  overflow-x: auto;
+}
+.stat {
+  display: inline-grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+  border-color: hsl(var(--bc) / var(--tw-border-opacity));
+  --tw-border-opacity: 0.1;
+  padding: 1rem 1.5rem;
+}
+.stat-title {
+  grid-column-start: 1;
+  white-space: nowrap;
+  opacity: 0.6;
+}
+.stat-value {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+.stat-desc {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  opacity: 0.6;
+}
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),
+    0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }

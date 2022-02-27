@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./css/popup.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
   </head>
   <body>
     <div class="openbox">
-      <div class="flex">Constellations</div>
-      <div class=""></div>
+      <div class="flex">Smooth Love Potion</div>
+      <!-- <div class="stats" id="nowContainer" style="height: 200px; width: 400px">
+        <div class="stat">
+          <div style="font-weight: 300">Price :</div>
+          <div style="font-weight: 600">69</div>
+          <small style="font-weight: 200">
+            Last updated <span class="lastUpdate">2.2</span>
+          </small>
+        </div>
+      </div> -->
+      <div id="offline">
+        <div class="offlinemiddle">
+          <div class="offlinealert">Offline</div>
+        </div>
+      </div>
+      <div
+        id="nowContainer"
+        style="height: 200px; width: 400px"
+        class="shadow stats"
+      >
+        <div>
+          <img src="./SLP.png" alt="SLP LOGO" />
+        </div>
+        <div class="stat">
+          <div class="stat-title">Price</div>
+          <div class="stat-value">Loading...</div>
+          <div class="stat-desc">
+            Updated at <span id="lastUpdate">Loading...</span>
+          </div>
+        </div>
+      </div>
+      <div id="chartContainer" style="height: 200px; width: 400px"></div>
+
+      <div class="buttonsArea">
+        <button id="now">Now</button>
+        <button id="oneDay">One day</button>
+        <button id="fiveDays">5 days</button>
+        <button id="fifteenDays">15 days</button>
+        <button id="thirtyDays">30 days</button>
+      </div>
     </div>
   </body>
+  <script src="../jquery.min.js"></script>
+  <script src="../charts.min.js"></script>
+
   <script src="./popup.js"></script>
 </html>
